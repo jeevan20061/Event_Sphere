@@ -1,0 +1,10 @@
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    orgname VARCHAR(255) NOT NULL,
+    orgtype VARCHAR(100) NOT NULL,
+    address TEXT NOT NULL,
+    contactno VARCHAR(15) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
