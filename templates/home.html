@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>E</span>vent<span>S</span>phere</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#event">Events for you</a>
+         </nav>
+        <button class="button"><a href="/templates/index.html">Logout</a></button>
+        <div id="menu-bars" class="fas fa-bars"></div>  
+       </header>
+       <section class="home" id="home" method="GET">
+        <div class="content">
+            <h3>Welcome <span>to the Dashboard</span></h3>
+            <a href="#" class="btn">Upload here</a>
+        </div>
+        <div class="event">
+            <div class="event-container" method="'POST">
+                <h2>Events Information</h2><br>
+                <form action="http://127.0.0.1:5000/home" method="POST" enctype="multipart/form-data">
+                    
+                    <input class="input-field" type="text" name="evname" placeholder="Event name" required>    
+                    <input class="input-field" type="date" name="evdate" placeholder="Event date" required>
+                    <input class="input-field" type="text" name="evloc" placeholder="Event Location" required><br>
+                    <input class="input-field" type="file" id="image" name="evimage" accept="image/*" placeholder="Upload Image:"><br>
+                    <input class="input-field" type="url" id="website" name="evwebsite" placeholder="Enter a URL:" required><br> 
+                    <input class="input-field" type="text" name="evtype" placeholder="Event type" required>         
+                    <button class="button" type="submit">Upload</button><br>
+                
+                </form>
+                
+            </div>
+        </div>
+        
+       
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>

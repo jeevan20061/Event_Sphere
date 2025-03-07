@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Details</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>{{ event[1] }}</h2>
+    <img src="{{ event[5] }}" alt="Event Image">
+    <p><strong>Date:</strong> {{ event[2] }}</p>
+    <p><strong>Location:</strong> {{ event[3] }}</p>
+    <p><strong>Website:</strong> <a href="{{ event[4] }}" target="_blank">{{ event[4] }}</a></p>
+    <p><strong>Event Type:</strong> {{ event[6] }}</p>
+    <p><strong>Organizer:</strong> {{ event[7] }}</p>
+    <a href="/templates/technical.html" >Back to Events</a>
+</body>
+</html>

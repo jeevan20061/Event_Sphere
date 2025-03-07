@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+   <header class="header">
+    <a href="#" class="logo"><span>E</span>vent<span>S</span>phere</a>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#event">Events for you</a>
+     </nav>
+     <div id="menu-bars" class="fas fa-bars"></div>
+     </header>
+     <section class="register" id="register">
+
+        <div class="register-container">
+                     
+            <div id="registerBox" class="form-box" method="POST">
+                <h2>Register</h2>
+                <form action="http://127.0.0.1:5000/register" method="POST">
+                    
+                    <input class="input-field" type="text" name="orgname" placeholder="Organization Name" required>       
+                    <input class="input-field" type="text" name="orgtype" placeholder="Organization Type" required>
+                    <input class="input-field" type="text" name="address" placeholder="Address" required>
+                    <input class="input-field" type="text" name="contactno" placeholder="Contact Number" required>
+                    <input class="input-field" type="email" name="email" placeholder="Email" required>
+                    <input class="input-field" type="text" name="username" placeholder="Username" required>
+                    <input class="input-field" type="password" name="password" placeholder="Set password" required>
+            
+                    <button class="button" type="submit">Register</button><br>
+                <a class="switch-link" href="login.html">Already have an account? Login</a>
+                </form>
+                
+            </div>
+        </div>
+    
+
+
+
+
+     </section>
+
+
+     <script src="script.js"></script>
+
+
+   </header>
+   </body>
+   </html>
